@@ -19,6 +19,7 @@ dependencies:
   readmore: ^2.2.0
   routemaster: ^1.0.1
   delayed_display: ^2.0.0
+  flutter_slidable: ^2.0.0
 
 dev_dependencies:
   build_runner: ^2.3.3
@@ -35,8 +36,12 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/Metropolis/Metropolis-Regular.otf
+        - asset: assets/fonts/Metropolis/Metropolis-SemiBold.otf
 
   # To add assets to your application, add an assets section, like this:
   assets:

@@ -62,4 +62,6 @@ class Utils {
   static int? mess;
   static int currentSelectedPrice = 1000;
   static bool buttonAnimationBoolean = false;
+
+  static List<bool> serviceDisplayCardList = [false, false, false];
 }

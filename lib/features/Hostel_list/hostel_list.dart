@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hostelp/features/search/utils.dart';
+import 'package:routemaster/routemaster.dart';
 
 class HostelList extends StatelessWidget {
   const HostelList({Key? key}) : super(key: key);
@@ -43,8 +44,11 @@ class HostelList extends StatelessWidget {
         body: CustomScrollView(
       slivers: [
         SliverAppBar(
-          leading: const Icon(
-            Icons.arrow_back_ios,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios),
+            onPressed: () {
+              Routemaster.of(context).pop();
+            },
           ),
           elevation: 5,
           title: const Text(
@@ -439,22 +443,22 @@ class HostelList extends StatelessWidget {
         ),
         SliverList(
             delegate: SliverChildListDelegate([
-          const ElevatedCardExample(),
-          const ElevatedCardExample(),
-          const ElevatedCardExample(),
-          const ElevatedCardExample(),
-          const ElevatedCardExample(),
-          const ElevatedCardExample(),
-          const ElevatedCardExample(),
-          const ElevatedCardExample(),
+          const HostelCard(),
+          const HostelCard(),
+          const HostelCard(),
+          const HostelCard(),
+          const HostelCard(),
+          const HostelCard(),
+          const HostelCard(),
+          const HostelCard(),
         ]))
       ],
     ));
   }
 }
 
-class ElevatedCardExample extends StatelessWidget {
-  const ElevatedCardExample({super.key});
+class HostelCard extends StatelessWidget {
+  const HostelCard({super.key});
 
   @override
   Widget build(BuildContext context) {
