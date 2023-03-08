@@ -468,7 +468,9 @@ class HostelCard extends StatelessWidget {
         child: Padding(
       padding: const EdgeInsets.all(4.0),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Routemaster.of(context).push('/hostel-detail');
+        },
         child: Card(
             elevation: 5,
             child: SizedBox(

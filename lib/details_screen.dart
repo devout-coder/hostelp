@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:hostelp/mytheme.dart';
+import 'package:routemaster/routemaster.dart';
 
 import 'utils/widgets/rules_tile.dart';
 
@@ -236,7 +237,9 @@ class _DetailScreenState extends State<DetailScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 20, bottom: 20),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Routemaster.of(context).push('/add-members');
+                },
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size(150, 50),
                     shape: RoundedRectangleBorder(
