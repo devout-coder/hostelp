@@ -17,6 +17,6 @@ final loggedInRoute = RouteMap(routes: {
   '/search': (_) => const MaterialPage(child: SearchScreen()),
   '/hostel': (_) => const MaterialPage(child: HostelList()),
   '/hostel-detail': (_) => const MaterialPage(child: DetailScreen()),
-  '/add-members': (_) => const MaterialPage(child: AddMembersScreen())
+  '/add-members': (_) => const MaterialPage(child: AddMembersScreen()),
   '/notifications': (_) => const MaterialPage(child: NotificationScreen()),
 });
