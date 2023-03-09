@@ -7,7 +7,6 @@ import 'utils/widgets/rules_tile.dart';
 
 class DetailScreen extends StatefulWidget {
   const DetailScreen({super.key});
-
   @override
   State<DetailScreen> createState() => _DetailScreenState();
 }

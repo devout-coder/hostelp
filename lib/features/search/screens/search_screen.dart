@@ -196,7 +196,9 @@ class _SearchScreenState extends State<SearchScreen> {
                               ),
                             ),
                             suffixIcon: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Routemaster.of(context).push('/hostellist');
+                                },
                                 icon: Icon(
                                   Icons.location_on_rounded,
                                   color: Theme.of(context).colorScheme.primary,

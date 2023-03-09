@@ -31,13 +31,13 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-
+lib/firebase_options.dart
 # Symbolication related
 app.*.symbols
 
 # Obfuscation related
 app.*.map.json
-
+android/app/google-services.json
 # Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile
